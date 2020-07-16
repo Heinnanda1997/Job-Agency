@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/categoryFragment">
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.jobagency.fragment.CategoryFragment"
+        android:label="fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_jobDetailFragment"
+            app:destination="@id/jobDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jobDetailFragment"
+        android:name="com.example.jobagency.fragment.JobDetailFragment"
+        android:label="fragment_job_detail" >
+        <argument
+            android:name="jobId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_jobDetailFragment_to_nextFragment"
+            app:destination="@id/nextFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nextFragment"
+        android:name="com.example.jobagency.fragment.NextFragment"
+        android:label="fragment_next">
+        <argument
+            android:name="nextId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_nextFragment_to_applyFragment"
+            app:destination="@id/applyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/applyFragment"
+        android:name="com.example.jobagency.fragment.ApplyFragment"
+        android:label="fragment_apply">
+        <argument
+            android:name="applyId"
+            app:argType="integer" />
+    </fragment>
+</navigation>

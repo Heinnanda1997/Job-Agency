@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="570dp"
+    android:layout_margin="30dp"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    app:layout_constraintCircleRadius="12dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/txt_imageTwo"
+        android:layout_width="266dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/hit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_kindTwo"
+        android:drawableLeft="@drawable/type"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_imageTwo" />
+
+    <TextView
+        android:id="@+id/txt_vacancy"
+        android:drawableLeft="@drawable/worker"
+
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:text="gfdgdgd"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_kindTwo" />
+
+    <TextView
+        android:id="@+id/txt_experience"
+        android:drawableLeft="@drawable/experiennce"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:text=""
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_vacancy" />
+
+    <TextView
+        android:id="@+id/txt_qualification"
+        android:drawableLeft="@drawable/education"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:text=""
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_experience" />
+
+    <TextView
+        android:id="@+id/txt_company"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:drawableLeft="@drawable/compant"
+        android:text=" "
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_qualification" />
+
+    <TextView
+        android:id="@+id/txt_jobSalary"
+        android:drawableLeft="@drawable/m"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:text=""
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_company"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_endDate"
+        android:drawableLeft="@drawable/d"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_jobSalary"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_jobLocation"
+        android:drawableLeft="@drawable/loc"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_endDate" />
+
+    <TextView
+        android:id="@+id/txt_mail"
+        android:drawableLeft="@drawable/email"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:textAlignment="center"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_jobLocation" />
+
+    <Button
+        android:id="@+id/txt_applyButton"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:text="APPLY JOB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_mail" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

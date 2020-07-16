@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="650dp"
+    android:layout_margin="40dp"
+    app:cardCornerRadius="15dp"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/apply_image"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/digital"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/apply_Name"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:hint="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apply_image" />
+
+        <EditText
+            android:id="@+id/apply_Email"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:hint="Email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apply_Name" />
+
+        <EditText
+            android:id="@+id/apply_Phone"
+            android:hint="Phone"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apply_Email" />
+
+        <EditText
+            android:id="@+id/apply_address"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:hint="Address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apply_Phone" />
+
+        <EditText
+            android:id="@+id/apply_detail"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:hint="Detail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apply_address" />
+
+        <EditText
+            android:id="@+id/apply_Cv"
+            android:hint="CV Form"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apply_detail" />
+
+        <EditText
+            android:id="@+id/apply_Passward"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:hint="Password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apply_Cv" />
+
+        <EditText
+            android:id="@+id/apply_Status"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:hint="Status"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apply_Passward" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:text="Apply"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apply_Status" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

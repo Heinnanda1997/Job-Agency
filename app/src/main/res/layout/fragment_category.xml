@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:id="@+id/ly_category"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="80dp"
+        android:paddingTop="5dp"
+        android:text="Select Category"
+        android:textColor="#00695C"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ly_category"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <LinearLayout
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/pone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_job"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:src="@drawable/software"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="1dp"
+            android:paddingBottom="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pone"
+        app:layout_constraintVertical_bias="0.179">
+
+        <ImageView
+            android:id="@+id/iconPlayStore"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="22dp"
+            android:src="@drawable/iconone" />
+
+        <ImageView
+            android:id="@+id/iconFacebook"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="22dp"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/iconTwitter"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="22dp"
+            android:src="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/iconWhatApp"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="22dp"
+            android:src="@drawable/whatapp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
